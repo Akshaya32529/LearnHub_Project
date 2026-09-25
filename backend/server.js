@@ -24,7 +24,7 @@ const allowedOrigins = String(process.env.CLIENT_URL || 'http://localhost:5173')
   .filter(Boolean);
 app.use(
   cors({
-    origin: (origin, callback) => callback(null, !origin || allowedOrigins.includes(origin)),
+    origin: "https://learn-hub-project-pn52tuvfj-akshaya-reddy-vanga-s-projects.vercel.app/",
     credentials: true,
   })
 );
