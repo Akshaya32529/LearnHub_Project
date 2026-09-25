@@ -39,7 +39,7 @@ export default function StatusCard() {
     fetchHealth();
   }, []);
 
-  const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+  const apiUrl = import.meta.env.VITE_API_URL || 'https://learnhub-project-1-xu2q.onrender.com/api';
 
   return (
     <div className="bg-white rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-200/80 overflow-hidden">

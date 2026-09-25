@@ -116,7 +116,7 @@ Frontend (`frontend/.env.example`):
 
 | Variable | Purpose |
 |---|---|
-| `VITE_API_URL` | API base URL including `/api`, for example `https://api.example.com/api`. |
+| `VITE_API_URL` | API base URL including `/api`; the deployed backend is `https://learnhub-project-1-xu2q.onrender.com/api`. |
 
 The frontend does not receive or store JWT or AI credentials.
 
@@ -178,7 +178,7 @@ Set `AI_API_KEY` and `AI_MODEL` on the backend. `AI_BASE_URL` may point at an Op
 ## Deployment
 
 1. Provision MongoDB and configure `MONGO_URI` with a restricted database user.
-2. Deploy the backend with `PORT`, `NODE_ENV=production`, `CLIENT_URL`, a strong `JWT_SECRET`, and `JWT_EXPIRES_IN`.
+2. Deploy the backend at `https://learnhub-project-1-xu2q.onrender.com` with `PORT`, `NODE_ENV=production`, `CLIENT_URL`, a strong `JWT_SECRET`, and `JWT_EXPIRES_IN`.
 3. Deploy the frontend build and set `VITE_API_URL` to the deployed API base ending in `/api`.
 4. Use HTTPS for both services. Production cookies are `HttpOnly`, `Secure`, and `SameSite=None` for cross-origin frontend/API hosting.
 5. Set `CLIENT_URL` to the exact frontend origin(s), and configure the same origins in deployment infrastructure.
